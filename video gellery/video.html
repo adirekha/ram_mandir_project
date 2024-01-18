@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="video.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <h1>video-gallery</h1>
+<div class="video-container">
+
+    <div class="video"><video src="video gallery\Snapinsta.app_video_10000000_285642324091956_3167304747950869162_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_10000000_293245083702029_404517611193830846_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_120420514_382330164197196_5723531430062725488_n.mp4" controls ></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_121443337_341491745342023_3136460884080842257_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_10000000_730317059160119_292853169045709920_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_318909202_930013858540485_3499868022670531532_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_10000000_1720990115072917_3374610363054701638_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_41832293_686251760317655_3259406099467681462_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_49490828_24379394158374825_4604603576820733504_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_121017386_654073160146525_317173389297856292_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_319200236_860634482423109_7891541334031877891_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_333396790_1369927320396464_5594893655316690352_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_333771285_289983490613399_6547015700841609752_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_334423188_6943499562406407_6047940276025897320_n.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\VID-20240115-WA0010.mp4"  controls></video></div>
+    <div class="video"><video src="video gallery\Snapinsta.app_video_10000000_1055272355792509_3614019414618043486_n.mp4"   controls></video></div>
+    <div class="video"><video src=""  controls></video></div>
+
+
+
+
+</div>
+
+   <div class="popup-video">
+
+
+    <span>&times;</span>
+
+    <video src="Snapinsta.app_video_10000000_388877553593931_5801345100543276987_n.mp4" muted autoplay controls></video>
+</div>
+        
+</div>
+
+<script>
+    document.querySelectorAll('.video-container video').forEach(vid =>{
+        vid.oneclick =() =>{
+            document.querySelector('.popup-video').style.display ='block';
+            document.querySelector('.popup-video video').src = vid.getAttribute(src);
+
+        }
+
+
+    });
+
+    document.querySelector('popup-video span').oneclick = () =>{
+        document.querySelector('.popup-video').style.display ='none';
+
+    }
+</script>
+    
+</body>
+</html>
